@@ -5,5 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: pip install sendgrid
-      - run: ls ${{ github.workspace }}
+      - run: python ${{ github.workspace }}/testes_sendgrid.py
 
