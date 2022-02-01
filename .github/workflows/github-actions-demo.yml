@@ -14,3 +14,5 @@ jobs:
       - name: execute py script # run the run.py to get the latest data
         run: |
           python testes_sendgrid.py
+        env:
+          key: ${{ secrets.SENDGRID_API_KEY }} # if run.py requires passwords..etc, set it as secrets
